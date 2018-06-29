@@ -1,0 +1,139 @@
+<core:View controllerName="Z_HR_CONTACT.view.Main" displayBlock="true" height="100%" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" xmlns="sap.m">
+	<Page navButtonPress="handleNavBack" showNavButton="true" title="Update Contact Details">
+		<content>
+			<l:VerticalLayout class="verticalLayout" id="formContainer" width="100%">
+				<l:content>
+					<Panel class="flexBox">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>WorkEmailID}" width="170px"/>
+							<Text class="flexDisplayValue" text="{path:'WorkEmail', formatter:'Z_HR_CONTACT.util.formatter.toLowerCase'}"/>
+						</content>
+					</Panel>
+					<Panel class="flexBox">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>WorkPhoneNumber}" width="170px"/>
+							<Text class="flexDisplayValue"
+								text="{parts: [ {path:'WorkPhone/CountryCode'}, {path:'WorkPhone/Number'}, {path:'WorkPhone/Extension'}], formatter: 'Z_HR_CONTACT.util.formatter.displayPhoneNumber' }"/>
+							<core:Icon press="showEditField" src="sap-icon://edit" visible="false"/>
+						</content>
+					</Panel>
+					<Panel class="flexBox" visible="false">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>WorkPhoneNumber}" width="170px"/>
+							<l:HorizontalLayout class="inputContent">
+								<Text class="flexItems plus" text="+" width="15px"/>
+								<Input class="flexItems" id="workPhoneCC" valueStateText="{i18n>CountryCode}" width="65px"/>
+								<Input class="flexItems" id="workPhone" valueStateText="{i18n>Number}" width="125px"/>
+								<Input class="flexItems" id="workPhoneEX" valueStateText="{i18n>Extension}" width="65px"/>
+							</l:HorizontalLayout>
+							<l:HorizontalLayout>
+								<core:Icon class="flexItems" press="onSingleSave" src="sap-icon://save"/>
+								<core:Icon press="displayCurrentEditField" src="sap-icon://sys-cancel"/>
+							</l:HorizontalLayout>
+						</content>
+					</Panel>
+					<Panel class="flexBox">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>WorkCellPhone}" width="170px"/>
+							<Text class="flexDisplayValue"
+								text="{parts: [ {path:'WorkCellNumber/CountryCode'}, {path:'WorkCellNumber/Number'} ], formatter: 'Z_HR_CONTACT.util.formatter.displayPhoneNumber'}"/>
+							<core:Icon press="showEditField" src="sap-icon://edit" visible="false"/>
+						</content>
+					</Panel>
+					<Panel class="flexBox" visible="false">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>WorkCellPhone}" width="170px"/>
+							<l:HorizontalLayout class="inputContent">
+								<Text class="flexItems plus" text="+" width="15px"/>
+								<Input class="flexItems" id="workCellCC" valueStateText="Upto 4 digit number" width="65px"/>
+								<Input class="flexItems" id="workCell" valueStateText="{i18n>Number}"/>
+							</l:HorizontalLayout>
+							<l:HorizontalLayout>
+								<core:Icon class="flexItems" press="onSingleSave" src="sap-icon://save"/>
+								<core:Icon press="displayCurrentEditField" src="sap-icon://sys-cancel"/>
+							</l:HorizontalLayout>
+						</content>
+					</Panel>
+					<Panel class="flexBox">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>PersonalEmailId}" width="170px"/>
+							<Text class="flexDisplayValue" text="{path: 'PersonalEmail', formatter:'Z_HR_CONTACT.util.formatter.toLowerCase'}"/>
+							<core:Icon press="showEditField" src="sap-icon://edit"/>
+						</content>
+					</Panel>
+					<Panel class="flexBox" visible="false">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>PersonalEmailId}" width="170px"/>
+							<l:VerticalLayout class="inputContent flexItems">
+							<l:HorizontalLayout>
+								<Input class="flexItems" id="personalEmail" width="260px"/>
+								</l:HorizontalLayout>
+							</l:VerticalLayout >
+							<l:HorizontalLayout>
+								<core:Icon class="flexItems" press="onSingleSave" src="sap-icon://save"/>
+								<core:Icon press="displayCurrentEditField" src="sap-icon://sys-cancel"/>
+							</l:HorizontalLayout>
+						</content>
+					</Panel>
+					<Panel class="flexBox">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>HomePhoneNumber}" width="170px"/>
+							<Text class="flexDisplayValue"
+								text="{parts: [ {path:'HomePhone/CountryCode'}, {path:'HomePhone/Number'} ], formatter: 'Z_HR_CONTACT.util.formatter.displayPhoneNumber'}"/>
+							<core:Icon press="showEditField" src="sap-icon://edit"/>
+						</content>
+					</Panel>
+					<Panel class="flexBox" visible="false">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>HomePhoneNumber}" textAlign="End" width="170px"/>
+							<l:VerticalLayout class="inputContent">
+								<l:HorizontalLayout >
+									<Text class="flexItems plus" text="+" width="15px"/>
+									<Input class="flexItems masterTooltip" id="homePhoneCC" myToolTip="XXX" title="abc" valueStateText="{i18n>CountryCode}" width="65px"/>
+									<Input class="flexItems masterTooltip" id="homePhone" myToolTip="YYY" title="abc" valueStateText="{i18n>Number}"/>
+								</l:HorizontalLayout>
+								<Text class="flexItems valueHelp" maxLines="2" text="{i18n>PhoneNumberHelp}" width="100%"/>
+							</l:VerticalLayout>
+							<l:HorizontalLayout>
+								<core:Icon class="flexItems" press="onSingleSave" src="sap-icon://save"/>
+								<core:Icon press="displayCurrentEditField" src="sap-icon://sys-cancel"/>
+							</l:HorizontalLayout>
+						</content>
+					</Panel>
+					<Panel class="flexBox">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>PersonalCellPhone}" width="170px"/>
+							<Text class="flexDisplayValue"
+								text="{parts: [ {path:'PersonalCellNumber/CountryCode'}, {path:'PersonalCellNumber/Number'} ], formatter: 'Z_HR_CONTACT.util.formatter.displayPhoneNumber'}"/>
+							<core:Icon press="showEditField" src="sap-icon://edit" tooltip="Click to edit"/>
+						</content>
+					</Panel>
+					<Panel class="flexBox" visible="false">
+						<content>
+							<Label class="itemLabel" design="Bold" text="{i18n>PersonalCellPhone}" width="170px"/>
+							<l:VerticalLayout class="inputContent">
+								<l:HorizontalLayout class="inputContent">
+									<Text class="flexItems plus" text="+" width="15px"/>
+									<Input class="flexItems" id="personalCellCC" valueStateText="{i18n>CountryCode}" width="65px"/>
+									<Input class="flexItems" id="personalCell" valueStateText="{i18n>Number}"/>
+								</l:HorizontalLayout>
+								<Text class="flexItems valueHelp" maxLines="2" text="{i18n>PhoneNumberHelp}" width="100%"/>
+							</l:VerticalLayout>
+							<l:HorizontalLayout>
+								<core:Icon class="flexItems" press="onSingleSave" src="sap-icon://save"/>
+								<core:Icon press="displayCurrentEditField" src="sap-icon://sys-cancel"/>
+							</l:HorizontalLayout>
+						</content>
+					</Panel>
+				</l:content>
+				<l:dependents>
+					<BusyDialog id="BusyDialog"/>
+				</l:dependents>
+			</l:VerticalLayout>
+		</content>
+		<footer>
+			<Toolbar></Toolbar>
+		</footer>
+	</Page>
+</core:View>

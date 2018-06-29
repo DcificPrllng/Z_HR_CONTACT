@@ -1,0 +1,102 @@
+{
+  "run": [
+    {
+      "filePath": "/Z_HR_CONTACT_V2/localIndex.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 9156337,
+        "displayName": "New Web Application 6"
+      }
+    },
+    {
+      "filePath": "/Z_HR_CONTACT_V2/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 2463659,
+        "displayName": "New Web Application 5",
+        "hasIssues": true
+      }
+    },
+    {
+      "filePath": "/Z_HR_CONTACT_V2/Component.js",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 1529316,
+        "displayName": "New SAP Fiori Component on Sandbox 2",
+        "hasIssues": true
+      }
+    },
+    {
+      "filePath": "/Z_HR_CONTACT/localIndex.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 8027430,
+        "displayName": "New Web Application 4"
+      }
+    },
+    {
+      "filePath": "/Z_HR_CONTACT/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 6003118,
+        "displayName": "New Web Application 1"
+      }
+    },
+    {
+      "filePath": "/Z_HR_CONTACT/Component.js",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 9148666,
+        "displayName": "New SAP Fiori Component on Sandbox 1"
+      }
+    }
+  ]
+}
