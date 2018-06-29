@@ -65,7 +65,7 @@ sap.ui.controller("Z_HR_CONTACT.view.Main", {
 			allFormElements[editFormElementIndex].getContent()[1].getContent()[0].getContent()[2].setValue(currentValues[1]);
 
 		}
-		if (currentFormElementIndex === 2) { //Work Phone Extension
+		if (currentFormElementIndex === 1) { //Work Phone Extension
 			allFormElements[editFormElementIndex].getContent()[1].getContent()[0].getContent()[3].setValue(currentValues[2]);
 		}
 	},
