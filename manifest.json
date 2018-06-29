@@ -1,0 +1,59 @@
+{
+	"_version": "1.2.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "Z_HR_CONTACT",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "My Contacts",
+		"description": "My Contacts",
+		"resources": "resources.json",
+		"ach": "ach"
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"_version": "1.2.0",
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"config": {
+			"sapFiori2Adaptation": {
+				"style": true,
+				"collapse": false,
+				"title": true,
+				"back": false,
+				"hierarchy": false
+			}
+		}
+	}
+}
