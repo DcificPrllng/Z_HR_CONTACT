@@ -26,7 +26,7 @@
 									<Text class="flexItems plus" text="+" width="15px"/>
 									<Input class="flexItems" id="workPhoneCC" valueStateText="{i18n>CountryCode}" width="65px"/>
 									<Input class="flexItems" id="workPhone" valueStateText="{i18n>Number}" width="125px"/>
-									<Input class="flexItems" id="workPhoneEX" valueStateText="{i18n>Extension}" width="65px"/>
+									<Input class="flexItems" id="workPhoneEX" visible="false" valueStateText="{i18n>Extension}" width="65px"/>
 								</l:HorizontalLayout>
 								<Text class="flexItems valueHelp" maxLines="2" text="{i18n>PhoneNumberHelp}" width="100%"/>
 							</l:VerticalLayout>
