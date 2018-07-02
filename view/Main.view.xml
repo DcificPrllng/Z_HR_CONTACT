@@ -14,7 +14,7 @@
 						<content>
 							<Label class="itemLabel" design="Bold" text="{i18n>WorkPhoneNumber}" width="170px"/>
 							<Text class="flexDisplayValue"
-								text="{parts: [ {path:'WorkPhone/CountryCode'}, {path:'WorkPhone/Number'}, {path:'WorkPhone/Extension'}], formatter: 'Z_HR_CONTACT.util.formatter.displayPhoneNumber' }"/>
+								text="{parts: [ {path:'WorkPhone/CountryCode'}, {path:'WorkPhone/Number'}], formatter: 'Z_HR_CONTACT.util.formatter.displayPhoneNumber' }"/>
 							<core:Icon press="showEditField" src="sap-icon://edit" visible="true"/>
 						</content>
 					</Panel>
